@@ -1,8 +1,49 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      body{
+        padding: 2rem;
+      }
+      label{
+          font-size: 18px;
+          font-weight: 500;
+      }
+      input{
+          background-color: lightgrey;
+          outline: none;
+          /* border: none; */
+          padding: 5px 10px ;
+          border: 1px solid grey;
+      }
+      button{
+          margin-top: 2rem;
+          background-color: white;
+          color: black;
+          padding: 8px 15px;
+          border: 1px solid lightgray;
+      }
+      button:active, button:hover{
+          border-color: aquamarine;
+      }
+
+    </style>
+  </head>
   <body>
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h3 id="sharableUrl">https://localhost:8080/</h3>
+    <div>
+        <label for="name">Name:</label>
+        <br/>
+        <input id="name" type="text"/>
+    </div>
+     <div>
+        <label for="year">Graduation Year:</label>
+        <br/>
+        <input id="year" type="number"/>
+    </div>
+    <button onclick="submitHandler()">Submit</button>
+    
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 
 </html>
